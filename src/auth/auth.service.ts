@@ -40,4 +40,8 @@ export class AuthService {
             user,
         };
     }
+
+    async logout(req: any) {
+        
+    }
 }
