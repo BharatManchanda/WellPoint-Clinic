@@ -42,6 +42,10 @@ export class AuthService {
     }
 
     async logout(req: any) {
-        
+        const token = req.headers.authorization.split(' ')[1];
+        return {
+            message: 'Logout successful',
+            access_token: token,
+        };
     }
 }
